@@ -1,0 +1,26 @@
+{
+  "name": "plain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node index.js",
+    "compile-schemas": "cd schemas && json2ts -i . -o ../types --unreachableDefinitions"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.13",
+    "@types/uuid": "^9.0.8",
+    "fastify": "^4.27.0",
+    "json-schema-to-typescript": "^14.0.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "uuid": "^9.0.1"
+  },
+  "dependencies": {
+    "fastify-plugin": "^4.5.1",
+    "fastify-sensible": "^3.2.0"
+  }
+}

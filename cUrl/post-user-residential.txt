@@ -1,0 +1,11 @@
+curl -X POST http://localhost:3000/users \
+-H "Content-Type: application/json" \
+-d '{
+  "name": "John Doe",
+  "id": 1,
+  "email": "john.doe@example.com",
+  "address": {
+    "type": "residential",
+    "householdName": "Doe Household"
+  }
+}'
